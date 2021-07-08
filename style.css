@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    line-height: 30px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: square;
+    color: cyan;
+}
+.flexible-item{
+    display: flex;
+}
+header{
+    background-color: blanchedalmond;
+    height: 60px;
+    overflow: hidden;
+    border-bottom: 1px solid cyan;
+    border-top: 1px solid cyan;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+h1{
+    font-size: 48px;
+}
+h3{
+    font-size: 34px;
+}
+#top-banner{
+    background-image: url(image/top-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul.navbar {
+	display: inline-flex;
+	list-style: none;
+	line-height: 30px;
+	margin: 0px auto;
+	padding-right: 20px;
+}
+.logo{
+    line-height: 60px;
+    width: 20%;
+}
+.menu{    
+    width: 80%;
+    text-align: right;
+}
+ul.navbar li{
+    padding: 0px 15px;
+    line-height: 60px;
+    align-items: center;
+}
+ul.navbar li a{
+    text-decoration: none;
+    color: darkslategray;
+}
+ul.navbar li:hover{
+    background: linear-gradient(45deg, orange, cyan);
+    border-radius: 5px;
+}
+.link-button{
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(45deg, lightsalmon, tomato);
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.orange{
+    color: orange;
+}
+.introduction{
+    padding: 20px;
+    width: 50%;
+}
+.top-banner-text{
+    padding-left: 10%;
+}
+.image{
+    text-align: right;
+    width: 50%;
+    padding: 20px;
+}
+.image img{
+    width: 80%;
+}
+.text-center{
+    text-align: center;
+}
+/**** about section ****/
+#About,#Portfolio{
+    background-color: #fafafa;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 40px;
+}
+.line{
+    height: 4px;
+    width: 200px;
+    text-align: left;
+    background-color: orange;
+    border: none;
+}
+.row{
+    display: grid;
+    width: 80%;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+}
+.icon-image img{
+    width: 100px;
+}
+.card{
+    margin: 3.33%;
+    padding: 40px;
+    box-shadow: 10px 10px 40px #fafa;
+    border-bottom: 7px solid orange;
+    height: 330px;
+    margin-bottom: 20px;
+}
+.card:hover{
+    border-bottom: 7px solid;
+    border-image:  linear-gradient(45deg, cyan, tomato);
+    border-image-slice: 1;
+    
+    /* transition: .7s; */
+}
+#HowWork{
+    margin-top: 60px;
+}
+#HowWork>.row>.col-4>.card{
+    height: 400px;
+    text-align: center;
+}
+.card.card-project{
+    box-shadow: 10px 10px 40px rgb(46, 67, 67);
+    height: auto;
+    padding: 5px;
+    position: relative;
+}
+.project-image img{
+    width: 100%;
+}
+.hover-box{
+    display: none;
+    position:absolute;
+    top: 10px;
+    background-color: rgba(31, 27, 26, 0.85);
+    text-align: center;
+    color: white;
+    align-items: center;
+    width: 98%;
+    height: 92%;
+    margin:  0 auto;
+}
+.project-image:hover .hover-box{
+    display: block;
+}
+.client-name{
+    color: yellowgreen;
+}
+.star{
+    color: orange;
+    font-size: 38px;
+    padding: 15px 0px;
+}
+.pricing-row{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.pricing-card{
+    margin: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+    border-radius: 5px;
+    min-height: 450px;
+    box-shadow: none;
+    border-bottom: none;
+}
+.basic{
+    background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
+}
+.standard{
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+}
+.premium{
+    background-image: linear-gradient(135deg, #08AEEA 0%, #2AF598 100%);
+}
+.ultimate{
+    background-image: linear-gradient(to top, #cc208e 0%, #6624bbe3 100%);
+}
+.whitesmoke{
+    color: whitesmoke;
+}
+.card-body h4{
+    text-transform: uppercase;
+}
+.price{
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    border-radius: 50%;
+    width: 80px;
+    display: grid;
+    margin: 0 auto;
+    line-height: 80px;
+    font-weight: 900;
+}
+.price::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    background-color: whitesmoke;
+    color: yellowgreen;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.position-relative{
+    position: relative;
+}
+.price-service-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-weight: 500;
+    line-height: 34px;
+}
+.card-button-box{
+    position: relative;
+    bottom: -25px;   
+}
+.input-box label{
+    width: 100%;
+    display: block;
+    font-weight: 900;
+}
+.input-box input{
+    border: 1px solid rgba(0, 255, 255, 0.433);
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 100%;
+    font-size: 17px;
+}
+.input-box input:focus,textarea:focus{
+ outline: 1px solid yellowgreen;
+}
+.input-box textarea{
+    border: 1px solid rgba(0, 255, 255, 0.433);
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.contact{
+    width: 80%;
+    margin: auto;
+    box-shadow: 10px 10px 40px gray;
+    padding: 30px;
+    border-radius: 5px;
+}
+.image>.contact-image{
+    width: 400px;
+    margin: auto;
+}
+footer{
+    background-color: blanchedalmond;
+    padding: 30px;
+}
