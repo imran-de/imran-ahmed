@@ -285,3 +285,32 @@ footer{
     background-color: blanchedalmond;
     padding: 30px;
 }
+@keyframes bar-slide {
+    form{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+.under-line-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -10px;
+}
+.under-line{
+    position: relative;
+    width: 200px;
+
+}
+.round{
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    animation: bar-slide 3s ease-in-out .1s infinite alternate;
+}
